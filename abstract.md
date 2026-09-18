@@ -1,0 +1,5 @@
+Smith (1875) showed that the determinant of the $N \times N$ matrix $\big(\gcd(i,j)\big)$ is $\varphi(1)\cdots\varphi(N)$, and more generally that $\det\big(f(\gcd(i,j))\big) = \prod_{k \le N} g(k)$ whenever $f(m) = \sum_{d \mid m} g(d)$. This submission evaluates the companion determinant of least common multiples. Since $\mathrm{lcm}(i,j)\gcd(i,j) = ij$, the lcm matrix factors as $D S D$ with $D = \mathrm{diag}(1,\dots,N)$ and $S_{ij} = 1/\gcd(i,j)$, and $1/m$ is the Dirichlet convolution of $g = \mu * (1/\cdot)$ with the constant function $1$ by Möbius inversion. Hence
+
+$$\det\big(\mathrm{lcm}(i,j)\big)_{i,j \le N} = (N!)^2 \prod_{k \le N} g(k) = N!\prod_{k \le N}\prod_{p \mid k}(1 - p),$$
+
+using $\sum_{d \mid n}\mu(d)\,d = \prod_{p \mid n}(1-p)$ for every $n \ge 1$. The three statements are the determinant in terms of $g$, the closed form $g(n) = \tfrac{1}{n}\prod_{p\mid n}(1-p)$, and the closed form of the determinant. Smith's factorisation over a commutative ring and the Möbius product identity for arbitrary $n$ appear as helpers of the proofs and are not claimed as archive content.

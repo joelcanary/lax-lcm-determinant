@@ -1,0 +1,19 @@
+specVersion: "1"
+id: lax-426240
+leanVersion: "v4.33.0"
+mathlibVersion: "db584cd6d46c92f209a44c0f1c829460d327499d"
+title: "The determinant of the least-common-multiple matrix"
+authors:
+  - name: Joel Cruz Cabrera
+    orcid: "0009-0005-4048-1237"
+    github: joelcanary
+bibEntries:
+  - |
+    @article{smith1875,
+      author = {Smith, Henry John Stephen},
+      title = {On the value of a certain arithmetical determinant},
+      journal = {Proceedings of the London Mathematical Society},
+      volume = {7},
+      year = {1875},
+      pages = {208--212}
+    }
