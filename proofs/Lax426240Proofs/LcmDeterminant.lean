@@ -37,7 +37,7 @@ theorem zetaR_blockTriangular (N : ℕ) : (zetaR (R := R) N).BlockTriangular id 
   omega
 
 theorem det_zetaR (N : ℕ) : (zetaR (R := R) N).det = 1 := by
-  rw [Matrix.det_of_upperTriangular (zetaR_blockTriangular N)]
+  rw [Matrix.det_of_isUpperTriangular (zetaR_blockTriangular N)]
   simp [zetaR]
 
 def smithR (N : ℕ) (f : ℕ → R) : Matrix (Fin N) (Fin N) R :=
@@ -260,13 +260,13 @@ theorem det_lcmMatrix_closed (N : ℕ) :
   rw [det_lcmMatrix]
   have hg : ∀ i : Fin N, g ((i : ℕ) + 1)
       = (1 / ((((i : ℕ) + 1 : ℕ) : ℚ))) * ∏ p ∈ ((i : ℕ) + 1).primeFactors, (1 - (p : ℚ)) :=
-    fun i => by rw [g_eq _ (by omega)]; push_cast; rfl
+    fun i => by rw [g_eq _ (by omega)]
   simp_rw [hg]
-  rw [Finset.prod_mul_distrib, Finset.prod_div_distrib]
+  rw [Finset.prod_mul_distrib, Finset.prod_div_distrib, Finset.prod_const_one]
   have hne : (∏ i : Fin N, (((i : ℕ) + 1 : ℕ) : ℚ)) ≠ 0 :=
     Finset.prod_ne_zero_iff.mpr fun i _ => by positivity
   field_simp
-  ring
+  try ring
 
 end Lcm
 
