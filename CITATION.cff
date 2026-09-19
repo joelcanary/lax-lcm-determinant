@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Cite the Lax Lean Archive record, which is permanent: lax-426240."
+type: dataset
+title: "The determinant of the least-common-multiple matrix"
+authors:
+  - family-names: Cruz Cabrera
+    given-names: Joel
+    orcid: https://orcid.org/0009-0005-4048-1237
+identifiers:
+  - type: url
+    value: https://laxarchive.org/lax-426240/
+    description: Lax Lean Archive record (registered 2026-09-18; statements and kernel-checked proofs)
+repository-code: https://github.com/joelcanary/lax-lcm-determinant
+url: https://laxarchive.org/lax-426240/
+license: Apache-2.0
+date-released: 2026-09-18
+keywords:
+  - Lean 4
+  - Mathlib
+  - formal proof
+  - Lax Lean Archive
