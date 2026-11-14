@@ -52,17 +52,8 @@ The pins are in `manifest.yaml`; the archive's build of this commit
 
 ## Related
 
-- The four records and their live counts: https://kodamaseclabs.com/publications
+- The five records and their live counts: https://kodamaseclabs.com/publications
 - Smith's determinant over any commutative ring, and the Redheffer determinant, are submitted to Mathlib separately (pull requests #43884 and #43758); this record does not duplicate them.
-
-## Further references
-
-These are references for the reader of this repository. The record's own text and bibliography (`abstract.md`, `manifest.yaml`) are fixed by the registration; a correction there would be a new record that supersedes this one.
-
-- **Attribution.** Smith evaluated this determinant too, in the same 1875 paper as the gcd one: $\det\big(\mathrm{lcm}(i,j)\big)_{i,j\le N} = \prod_{k\le N}\varphi(k)\,\pi(k)$ with $\pi(k) = \prod_{p\mid k}(-p)$, which is the closed form above. What this record adds is the kernel-checked proof, not the formula; the description above, written for the record, does not say so clearly enough.
-- H. J. S. Smith, *On the value of a certain arithmetical determinant*, Proc. London Math. Soc. s1-7 (1875) 208–213. [doi:10.1112/plms/s1-7.1.208](https://doi.org/10.1112/plms/s1-7.1.208)
-- P. Haukkanen, J. Wang, J. Sillanpää, *On Smith's determinant*, Linear Algebra Appl. 258 (1997) 251–269 — survey of the gcd and lcm generalizations. [doi:10.1016/S0024-3795(96)00192-9](https://doi.org/10.1016/S0024-3795(96)00192-9)
-- A. Bege, *Generalized LCM matrices*, [arXiv:1108.5802](https://arxiv.org/abs/1108.5802) — states Smith's lcm determinant on its first page.
 
 ## Use of AI
 
